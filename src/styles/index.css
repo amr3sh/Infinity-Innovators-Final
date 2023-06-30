@@ -98,7 +98,8 @@
 }
 
 .bg-left {
-  background: url("/Users/mahen/Uni/Amresh/Infinity-Innovators/src/assets/login_page_assets/left_Side.png");
+  /* background: url("/Users/mahen/Uni/Amresh/Infinity-Innovators/src/assets/login_page_assets/left_Side.png"); */
+  background: url("D:/01. UX Oppurtunities/05. Infinity Innovators/Code/infinity-innovators/infinity-code/src/assets/login_page_assets/left_Side.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
