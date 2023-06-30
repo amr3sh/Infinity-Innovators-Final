@@ -23,10 +23,12 @@ import Insta from "../../assets/landing_page_assets/insta.png";
 import Twitter from "../../assets/landing_page_assets/twitter.png";
 import Tiktok from "../../assets/landing_page_assets/tiktok.png";
 import Facebook from "../../assets/landing_page_assets/facebook.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg">
       {/* Header */}
@@ -42,11 +44,17 @@ const LandingPage = () => {
           <Link className="link">Log In</Link>
         </div>
         <div className="d-flex gap-3">
-          <Button className="primary-btn text-semibold text-title py-2 text-medium">
+          <Button
+            onClick={() => navigate("/sign-up")}
+            className="primary-btn text-semibold text-title py-2 text-medium"
+          >
             Sign Up
           </Button>
 
-          <Button className="secondary-btn text-semibold text-title py-2 text-medium">
+          <Button
+            onClick={() => navigate("/login")}
+            className="secondary-btn text-semibold text-title py-2 text-medium"
+          >
             Log In
           </Button>
         </div>

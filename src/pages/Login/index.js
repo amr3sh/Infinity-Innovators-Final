@@ -6,8 +6,11 @@ import BgImageRight from "../../assets/login_page_assets/right_Side.png";
 import GoogleIcon from "../../assets/login_page_assets/google_Icon.png";
 import AppleIcon from "../../assets/login_page_assets/apple_Icon.png";
 import { Col, Row, Image, Button, Form } from "react-bootstrap";
+import { useNavigate } from "react-router";
 
 function Login() {
+  const navigate = useNavigate();
+
   return (
     <Row>
       <Col md={7} className="pl-0 pr-0">
@@ -74,14 +77,22 @@ function Login() {
           </Form>
 
           <Row className="mx-5 mt-5">
-            <Button className="primary-btn text-semibold text-title py-2 text-medium">
+            <Button
+              onClick={() => navigate("/")}
+              className="primary-btn text-semibold text-title py-2 text-medium"
+            >
               Log In
             </Button>
           </Row>
 
           <div className="text-center mt-2 text-medium text-semibold">
             Don't have an account?{" "}
-            <span className="text-accent text-semibold">Sign Up Now</span>
+            <span
+              onClick={() => navigate("/sign-up")}
+              className="text-accent text-semibold"
+            >
+              Sign Up Now
+            </span>
           </div>
         </div>
       </Col>
