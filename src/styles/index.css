@@ -1,4 +1,98 @@
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
+}
+
+:root {
+  --title: #2c2c2c;
+  --subtitle: #afafaf;
+  --placeholder: #c9c9c9;
+  --accent: #00b860;
+  --button: #ff8513;
+}
+
+.text-title {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--title) !important;
+}
+
+.text-subtitle {
+  font-size: 14px !important;
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--subtitle) !important;
+}
+
+.text-semibold {
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+.text-normal {
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+
+.text-large {
+  font-size: 18px !important;
+}
+
+.text-small {
+  font-size: 13px !important;
+}
+
+.text-ex-small {
+  font-size: 10px !important;
+}
+
+.text-medium {
+  font-size: 15px !important;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.custom-input {
+  border-radius: 9px !important;
+  border: 2px solid rgba(255, 133, 19, 0.95) !important;
+  height: 50px;
+}
+
+.sub-btns {
+  border-radius: 10px !important;
+  border: 2px solid #000 !important;
+  background: #f1f1f1 !important;
+  color: var(--title) !important;
+}
+
+.primary-btn {
+  border-radius: 10px !important;
+  background: var(--button) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.divider {
+  border-width: 3px;
+  color: black;
+}
+
+.thumb {
+  border-radius: 24px;
+  border: 1px solid var(--primary-button, #ff8513);
+}
+
+.green-card {
+  border-radius: 19px;
+  border: 1px solid var(--accent-color, #00b860);
+  background: rgba(0, 184, 96, 0.5);
+  backdrop-filter: blur(9.5px);
+  padding: 12px;
+}
+
+.secondary-btn {
+  border-radius: 9px !important;
+  border: 2px solid var(--primary-button, #ff8513) !important;
+  background-color: transparent !important;
 }
