@@ -96,3 +96,13 @@
   border: 2px solid var(--primary-button, #ff8513) !important;
   background-color: transparent !important;
 }
+
+.bg-left {
+  background: url("/Users/mahen/Uni/Amresh/Infinity-Innovators/src/assets/login_page_assets/left_Side.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-colour {
+  background-color: #fffcf2;
+}

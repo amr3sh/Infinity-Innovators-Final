@@ -12,8 +12,7 @@ function SignUp() {
 
   return (
     <Row>
-      <Col md={7} className="pl-0 pr-0">
-        {/* <Image src={BgImageLeft} className="img-fluid vh-100 w-100" /> */}
+      <Col md={7} className="bg-left bg-colour">
         <div className="px-5 pt-3">
           <Image src={MainLogo} className="img-fluid" width={180} />
 
@@ -103,7 +102,7 @@ function SignUp() {
         </div>
       </Col>
 
-      <Col md={5} className="pl-0 pr-0">
+      <Col md={5} className="">
         <Image src={BgImageRight} className="img-fluid vh-100 w-100" />
       </Col>
     </Row>

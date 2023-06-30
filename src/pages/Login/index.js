@@ -13,8 +13,7 @@ function Login() {
 
   return (
     <Row>
-      <Col md={7} className="pl-0 pr-0">
-        {/* <Image src={BgImageLeft} className="img-fluid vh-100 w-100" /> */}
+      <Col md={7} className="pl-0 pr-0 bg-left bg-colour">
         <div className="px-5 pt-2">
           <Image src={MainLogo} className="img-fluid" width={180} />
 
